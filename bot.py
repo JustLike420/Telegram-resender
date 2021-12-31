@@ -6,7 +6,7 @@ bot = telebot.TeleBot(config.token)
 
 @bot.message_handler(commands=["start"])
 def start(message):
-    bot.send_message(message.chat.id, 'Привет, напиши сообщение в поддержку')
+    bot.send_message(message.chat.id, 'Hello, write a message to support')
 
 
 @bot.message_handler(content_types=["text"])
@@ -17,10 +17,10 @@ def messages(message):
             # print(f"id from - {(message.reply_to_message.text).split(':')[0]} id who - {message.chat.id} text - {
             # message.text}")
         except:
-            bot.send_message(message.chat.id, "Сделайте ответ на сообщение")
+            bot.send_message(message.chat.id, "Reply to the message")
     else:
         bot.send_message(config.owner, str(message.chat.id) + ': ' + message.text)
-        bot.send_message(message.chat.id, f'Ожидайте ответа')
+        bot.send_message(message.chat.id, f'Wait for a response')
         print(message)
 
 try:

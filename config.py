@@ -1,2 +1,2 @@
-token = '5059427815:AAGr8CKaZ_GWAhGDX8RjOvhics1qk0dqDqM'
-owner = '867435394'
+token = '5044514060:AAHDbiEPg6uTSr301XbaGy6Hel_0wJEn5mw'
+owner = '2118619386'
